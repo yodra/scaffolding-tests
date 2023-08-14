@@ -1,19 +1,18 @@
 {
-  "name": "template-typescript",
+  "name": "scaffolding-tests",
   "version": "1.0.0",
-  "description": "CodingIsCaring Template",
+  "description": "Kata to practice scaffolding tests",
   "keywords": [
-    "template",
-    "codingIsCaring",
-    "kata"
+    "kata",
+    "scaffolding",
+    "tests"
   ],
   "main": "main.ts",
   "engineStrict": true,
   "engines": {
-    "node": ">= 8.9.0"
+    "node": ">= 20.5.0"
   },
   "contributors": [
-    "mariasoria",
     "yodra"
   ],
   "license": "ISC",
@@ -22,7 +21,9 @@
     "test": "jest",
     "test-watch": "jest --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
   "devDependencies": {
     "@cowcoders/eslint-config": "1.2.9",
     "@types/jest": "26.0.23",
