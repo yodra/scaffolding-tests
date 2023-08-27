@@ -4,8 +4,8 @@
 
 ### Prerequisites
 
-- Node `>= 20.5.0`
-- NPM `>= 9.8.0`
+- Node `>= 18.17.1`
+- NPM `>= 9.6.7`
 
 ### Installation
 
