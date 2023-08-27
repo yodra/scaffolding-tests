@@ -1,19 +1,5 @@
-import { calculateMetrics } from './calculateMetrics';
+import { calculateMetrics, Metrics } from './calculateMetrics';
 import moment from 'moment/moment';
-
-interface Metrics {
-  agencySpend: number,
-  metricDate: moment.Moment,
-  totalAbsent: number,
-  totalAssignedShifts: number,
-  totalCost: number,
-  totalHours: number,
-  totalInterested: number,
-  totalNeedsApproval: number,
-  totalNotStarted: number,
-  totalOpenShifts: number,
-  totalOvertime: number;
-}
 
 const usersAssigmentShifts = [
   {
@@ -34,7 +20,65 @@ const usersAssigmentShifts = [
           name: 'Team 2'
         }
       ]
-    }
+    },
+    absent: false,
+    coveredShiftPortion: 1,
+    status: 'OPEN',
+    working: true,
+    chargeRate: 10,
+    overtimeRate: 15,
+    date: '2021-01-01',
+    shiftTime: {
+      startTime: '08:00:00',
+      endTime: '16:00:00',
+      breakTimes: [
+        {
+          startTime: '12:00:00',
+          endTime: '12:30:00',
+          durationMinutes: 30
+        }
+      ]
+    },
+    unscheduled: false
+  },
+  {
+    id: '2',
+    user: {
+      id: '2',
+      workerType: 'employee',
+      dailyOvertimeCutoverHours: 3,
+      weeklyOvertimeCutoverHours: 40,
+      payPeriodOvertimeCutoverHours: 80,
+      userTeams: [
+        {
+          id: '1',
+          name: 'Team 1'
+        },
+        {
+          id: '2',
+          name: 'Team 2'
+        }
+      ]
+    },
+    absent: false,
+    coveredShiftPortion: 1,
+    status: 'OPEN',
+    working: true,
+    chargeRate: 10,
+    overtimeRate: 15,
+    date: '2021-01-01',
+    shiftTime: {
+      startTime: '08:00:00',
+      endTime: '16:00:00',
+      breakTimes: [
+        {
+          startTime: '12:00:00',
+          endTime: '12:30:00',
+          durationMinutes: 30
+        }
+      ]
+    },
+    unscheduled: false
   }
 ];
 

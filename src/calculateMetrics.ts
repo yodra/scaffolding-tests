@@ -1,5 +1,19 @@
 import moment, { Moment } from 'moment/moment';
 
+export interface Metrics {
+  agencySpend: number,
+  metricDate: moment.Moment,
+  totalAbsent: number,
+  totalAssignedShifts: number,
+  totalCost: number,
+  totalHours: number,
+  totalInterested: number,
+  totalNeedsApproval: number,
+  totalNotStarted: number,
+  totalOpenShifts: number,
+  totalOvertime: number;
+}
+
 const getTimeDifferenceInMinutes = (start, end, date) => {
   if (!start || !end || !date) {
     return 0;

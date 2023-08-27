@@ -27,3 +27,7 @@ make test-watch
 
 - What is scaffolding test?
 - How to write a scaffolding test?
+- Exercise
+- Share time
+- Automatic refactoring
+- Conclusions
