@@ -10,7 +10,7 @@ node_modules/
 coverage
 
 # Transpiled files
-build/
+dist/
 
 # Optional npm cache directory
 .npm

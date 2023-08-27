@@ -5,9 +5,13 @@ help:
 
 init: ## Install dependencies
 	@echo "⚙️ Initialling project..."
-	@npm install
+	@npm ci
 
-start: ## Execute project on local environment
+build: ## Build project
+	@echo "🏗 Building project..."
+	@npm run build
+
+start: build ## Execute project on local environment
 	@echo "🏃‍♀️ Running project..."
 	@npm start
 
@@ -25,4 +29,4 @@ clean: ## Remove `dist` folder
 
 clean_all: clean ## Remove `package-lock.json` file and `node_modules` and `dist` folders
 	@echo "🧨 Cleaning all..."
-	@rm -rf node_modules
+	@rm -rf node_modules package-lock.json
