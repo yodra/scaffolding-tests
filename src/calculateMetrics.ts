@@ -28,7 +28,7 @@ const getTimeDifferenceInMinutes = (start, end, date) => {
   return moment.duration(endDateTime.diff(startDateTime)).asMinutes();
 };
 
-export const calculateMetrics = (usersAssigmentShifts, metricDate: Moment) => {
+export const calculateMetrics = (usersAssignmentShifts, metricDate: Moment) => {
   let scheduledTime;
   let time;
   let totalHours = 0;
@@ -47,7 +47,7 @@ export const calculateMetrics = (usersAssigmentShifts, metricDate: Moment) => {
   let totalNotStarted = 0;
   let totalAbsent = 0;
 
-  for (const currentAssignmentDay of usersAssigmentShifts) {
+  for (const currentAssignmentDay of usersAssignmentShifts) {
     const user = currentAssignmentDay.user;
     const {
       dailyOvertimeCutoverHours,

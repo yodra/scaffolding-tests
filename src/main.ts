@@ -1,7 +1,7 @@
 import { calculateMetrics, Metrics } from './calculateMetrics';
 import moment from 'moment/moment';
 
-const usersAssigmentShifts = [
+const usersAssignmentShifts = [
   {
     id: '1',
     user: {
@@ -82,5 +82,5 @@ const usersAssigmentShifts = [
   }
 ];
 
-const output: Metrics = calculateMetrics(usersAssigmentShifts, moment());
+const output: Metrics = calculateMetrics(usersAssignmentShifts, moment());
 console.log(output);
